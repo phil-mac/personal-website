@@ -1,0 +1,30 @@
+*{
+  font-family: Helvetica;
+}
+
+body{
+  background-color: #fdf9ff;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  background: #fdf9ff;
+}
+#about{
+  display: flex;
+}
+
+#aboutText{
+  flex: 0 0 65%;
+}
+
+#aboutLinks{
+  flex: 1;
+  padding-left: 40px;
+}
+
+.project{
+  #margin-left: 20px;
+}
