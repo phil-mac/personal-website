@@ -28,6 +28,10 @@ body{
 .project{
   #margin-left: 20px;
 }
+      
+ .essay{
+  margin-top: 80px;
+}
 
 .topnav {
   overflow: hidden;
