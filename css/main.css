@@ -44,11 +44,11 @@ body{
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #ddc5e6;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #77458a;
   color: white;
 }
