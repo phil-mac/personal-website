@@ -1,66 +1,102 @@
-<html>
+<!doctype html>
+
+<html lang="en">
 
 <head>
-  <title>Phil MacEachron</title>
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta charset="utf-8">
+
+    <title>School in the Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="center">
-    <!-- <nav class="topnav">
-      <a class="active" href="">About</a>
-      <a href="./projects/index.html">Projects</a>
-      <a href="./essays/index.html">Essays</a>
-    </nav> -->
+    <header class="nav-header">
+        <a href="/index.html" class="logo">
+            <img src="/images/cloudLogo.png" alt="smiling cloud logo">
+            <h2 class="tempLogo">School in the Cloud</h2>
+        </a>
+        <nav>
+            <a href="/about.html">About</a>
+            <a href="http://sitc.netlify.com">Sign Up</a>
+        </nav>
+    </header>
+    <section class="nav-fixed-spacer"></section>
 
-    <h1>About</h1>
-    <div id="about">
-      <div id="aboutText">
-        <p>Hello. My name is Phil MacEachron. I moved around when growing up, living on the east and west coasts of the
-          US, as well as in New Delhi, India. I studied physics in college and worked in the aerospace industry for few
-          years where I developed low-gravity fluid devices. 
-        </p>
-          <p>I love building things that help people, learning, helping
-          others learn, and spending time in nature. Currently I’m exploring the potential of spatial computing to
-          improve physics education.</p>
-      </div>
-      <div id="aboutLinks">
-        <p>Twitter: <a href="https://twitter.com/PhilMacEachron">@PhilMacEachron</a></p>
-        <p>GitHub: <a href="https://github.com/phil-mac">phil-mac</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/phil-maceachron-26104b71/">PhilMacEachron</a></p>
-      </div>
-    </div>
-    <h1>Projects</h1>
-    <h4>Physics Playground</h4>
-    <div class="project">
-      <p>This is a work-in-progress. I'm building it off the framework of CurieVR, but instead of only having pre-made
-        simulations like CurieVR, it provides the tools for users to make their own educational physics simulations
-        and lessons, and share them with others. It is multi-user and cross-platform, working on mobile and PC 6DoF VR
-        systems, as well as in a desktop version in web browsers using WebGL.</p>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/JNcBFOK_Ry4" frameborder="0"
-        allowfullscreen="allowfullscreen">
-      </iframe>
-    </div>
-    <h4>CurieVR</h4>
-    <div class="project">
-      <p>CurieVR is a multi-user virtual physics classroom, for use in online education. It is available on Steam for PC
-        VR in a closed beta. If you'd like a key, please email: phil at curievr.com. It contains interactive simulations
-        to visualize and experiment with physics concepts, as well as learning tools such as a networked blackboard,
-        slide deck, calculator, stopwatch, and tape measure.</p>
+    <header class="main-header">
+        <div class="main-header-cont">
+            <div class="call-to-action">
+                <h1>Where Students Excel</h1>
+                <h2>By connecting volunteers with students, we close the achievement gap.</h1>
+                <a href="http://sitc.netlify.com"><button>Sign Up</button></a> 
+            </div>
+        </div>
+    </header>
 
-      <p>Users can share their own slides in the app via an embedded chromium browser. The app communicates with a
-        simple Flask server written in Python and hosted on Google App Engine. The server accesses the Google Slides API
-        to query data from the slide deck in order to create buttons that can be clicked in the app to jump to different
-        slides and read widgets on the current slide to pose questions or load a simulation.</p>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/3-UYbVw2q8k" frameborder="0"
-        allowfullscreen="allowfullscreen">
-      </iframe>
-      <p></p>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/MC59mWmSaSs" frameborder="0"
-        allowfullscreen="allowfullscreen">
-      </iframe>
-    </div>
-  </div>
+    <section class="how-works">
+        <div class="how-cont">
+            <img class="how-img" src="images/undraw_teacher_35j2.svg" alt="woman teaching from behind a computer">
+            <div>
+                <h2>How it Works</h2>
+                <p>
+                    Retired volunteers receive teacher training, and put their knowledge to use teaching students in small classes. Students in need receive free academic mentorship to help then achieve their goals.
+                </p>
+                </div>
+        </div>
+    </section>
+
+    <section class="mentors">
+        <h2>Featured Mentors</h2>
+        <div class="mentor-tile-cont">
+            <div class="mentor">
+                <img src="images/mary.png" alt="headshot of an elderly woman smiling">
+                <div class="mentor-text">
+                    <h3>Mary Smith</h3>
+                    <p>Math and science teacher extraordinair. Mary teaches classes ranging from algebra to the science of planetary systems.</p>
+                </div>
+            </div>
+            <div class="mentor">
+                <img src="images/bob.png" alt="headshot of an elderly man in front of a bridge">
+                <div class="mentor-text">
+                    <h3>Bob Jones</h3>
+                    <p>History and english buff. Joe is loved by all his students, and does an incredible job making history and other subjects a pleasure to learn.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="classes">
+        <h2>Popular Classes</h2>
+        <div class="class-tile-cont">
+            <div class="class">
+                <h3>Math</h3>
+                <img src="images/undraw_mathematics_4otb.svg" alt="illustration of a student studying math">
+            </div>
+            <div class="class">
+                <h3>Programming</h3>
+                <img src="images/undraw_podcast_q6p7.svg" alt="illustration of a student programming on a laptop">
+            </div>
+            <div class="class">
+                <h3>Art</h3>
+                <img src="images/undraw_blank_canvas_3rbb.svg" alt="illustration of a teacher painting on a canvas">
+            </div>
+            <div class="class">
+                <h3>Language</h3>
+                <img src="images/undraw_fitting_pieces_cli3.svg" alt="illustration of teacher connecting with a student over video call">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <h2 class="tempLogo">School in the Cloud</h2>
+        <nav>
+            <a href="/about.html">About</a>
+            <a href="http://sitc.netlify.com">Sign Up</a>
+        </nav>
+        <p>Copyright @ 2019 School in the Cloud</p>
+    </footer>
 </body>
-
-</html>

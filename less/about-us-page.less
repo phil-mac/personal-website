@@ -1,0 +1,115 @@
+.about-project{
+    padding: 20px 0;
+
+    .about-cont{
+        width: 100%;
+
+        .flex(column, space-evenly, none);
+
+        .limit-max-width();
+    }
+
+    .how-img{
+        max-width: 90%;
+        max-height: 200px;
+
+        margin-top: 30px;
+    }
+    .about-cont{
+        width: 90%;
+
+        h2{
+            margin: 10px 0;
+            text-align: center;
+        }
+        .github{
+            width:5.6rem;
+            margin: 0 auto;
+
+            a{
+                display: inline-block;
+                .link();
+                width:5.6rem;
+                font-size: 6.5rem;
+            }
+        }
+    }
+
+    .about-item-cont{
+        .flex(column, space-evenly, none);
+        align-items: flex-start;
+
+        .limit-max-width();
+
+        @media @tablet{
+            flex-direction: row;
+        }
+
+        .about-item{
+            margin: 10px 10px;
+            padding: 3px 10px;
+            border-left: 4px solid lightgrey;
+        }
+        h3{
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.meet-team{
+    background: @section-background;
+
+    padding: 50px 0 20px 0;
+
+    .team-tile-cont{
+        width: 100%;
+        
+        max-width: @max-content-width;
+        margin: 20px auto;
+
+        .flex(column, space-evenly, none);
+    
+        @media @tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    h4{
+        margin: 5px 0;
+        color: @grey-text;
+    }
+
+    .team{
+        .flex(column, center, none);
+
+        margin: 20px 0;
+        padding: 10px 30;
+        
+        @media @tablet{
+            width: 48%;
+        }
+
+        .team-text{
+            margin: 10px 20px;
+            
+            text-align: center;
+        }
+    }
+
+    .social-icons{
+        a{
+            .link();
+            font-size: 3.5rem;
+            margin: 5px 10px;
+        }
+    }
+    img{
+        width: 100px;
+        border-radius: 100px;
+    }
+}
