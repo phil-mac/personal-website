@@ -1,5 +1,5 @@
 .main-header{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/studentOnComputer.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/coverPic.jpg');
     background-position: center top;
 
     background-position: center;
@@ -33,7 +33,7 @@
         text-align: center;
 
         @media @tablet{
-            padding-right: 40%;
+            padding-left: 30%;
         }
 
         h2{
@@ -50,22 +50,32 @@
     padding: 20px 0;
 
     .how-cont{
-        width: 100%;
+        width: 80%;
 
         .flex(row, space-evenly, none);
 
         .limit-max-width();
+        
     }
 
     .how-img{
         max-width: 40%;
         max-height: 200px;
     }
-    div{
-        width: 40%;
+    // div{
+    //     width: 80%;
 
         h2{
             margin: 10px 0;
+        }
+    // }
+
+    .social-icons{
+        margin-top:20px;
+        a{
+            .link();
+            font-size: 3.5rem;
+            margin: 5px 10px;
         }
     }
 }
