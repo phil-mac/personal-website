@@ -1,0 +1,531 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v11/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Nunito', sans-serif;
+}
+p {
+  font-size: 1.6rem;
+  font-family: 'Lora', serif;
+  line-height: 2.1rem;
+}
+button {
+  font-size: 2.5rem;
+}
+.nav-header {
+  background: white;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 5;
+  border-bottom: 2px solid #d3d3d3;
+}
+.nav-header .logo {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav-header img {
+  width: 60px;
+  height: 40px;
+}
+.nav-header h2 {
+  padding: 15px;
+  color: #9370DB;
+  font-size: 2rem;
+}
+@media (min-width: 700px) {
+  .nav-header h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .nav-header h2 {
+    font-size: 3.2rem;
+  }
+}
+.nav-header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-header nav a {
+  text-decoration: none;
+  color: #9370DB;
+  font-size: 2rem;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+@media (min-width: 700px) {
+  .nav-header nav a {
+    padding: 15px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .nav-header nav a {
+    padding: 25px;
+    font-size: 2.5rem;
+  }
+}
+.nav-fixed-spacer {
+  height: 60px;
+}
+footer {
+  background: #9370DB;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+footer nav {
+  padding: 10px 0;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/studentOnComputer.jpg');
+  background-position: center top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  color: white;
+}
+@media (min-width: 700px) {
+  .main-header {
+    height: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  .main-header {
+    height: 750px;
+  }
+}
+.main-header .main-header-cont {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.main-header .call-to-action {
+  width: 350px;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .main-header .call-to-action {
+    padding-right: 40%;
+  }
+}
+.main-header .call-to-action h2 {
+  padding: 15px;
+}
+.main-header button {
+  background: #9370DB;
+  border: 1px solid grey;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.8rem;
+  padding: 8px 20px;
+}
+.how-works {
+  padding: 20px 0;
+}
+.how-works .how-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.how-works .how-img {
+  max-width: 40%;
+  max-height: 200px;
+}
+.how-works div {
+  width: 40%;
+}
+.how-works div h2 {
+  margin: 10px 0;
+}
+.mentors {
+  background: #eeeeee;
+  padding: 40px 0 20px 0;
+}
+.mentors .mentor-tile-cont {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .mentors .mentor-tile-cont {
+    flex-direction: row;
+  }
+}
+.mentors h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.mentors h3 {
+  margin-bottom: 5px;
+}
+.mentors .mentor {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+.mentors .mentor .mentor-text {
+  margin-left: 20px;
+}
+.mentors img {
+  width: 100px;
+  border-radius: 100px;
+}
+.classes {
+  padding: 40px 0 20px 0;
+}
+.classes h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.classes .class-tile-cont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.classes .class {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  height: 180px;
+  background: #eeeeee;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+@media (min-width: 700px) {
+  .classes .class {
+    flex-direction: column-reverse;
+    width: 20%;
+    height: 180px;
+  }
+}
+.classes img {
+  max-height: 80%;
+  max-width: 60%;
+}
+@media (min-width: 700px) {
+  .classes img {
+    max-width: 60%;
+  }
+}
+.about-project {
+  padding: 20px 0;
+}
+.about-project .about-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.about-project .how-img {
+  max-width: 90%;
+  max-height: 200px;
+  margin-top: 30px;
+}
+.about-project .about-cont {
+  width: 90%;
+}
+.about-project .about-cont h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+.about-project .about-cont .github {
+  width: 5.6rem;
+  margin: 0 auto;
+}
+.about-project .about-cont .github a {
+  display: inline-block;
+  text-decoration: none;
+  color: #9370DB;
+  font-size: 2rem;
+  width: 5.6rem;
+  font-size: 6.5rem;
+}
+.about-project .about-item-cont {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .about-project .about-item-cont {
+    flex-direction: row;
+  }
+}
+.about-project .about-item-cont .about-item {
+  margin: 10px 10px;
+  padding: 3px 10px;
+  border-left: 4px solid lightgrey;
+}
+.about-project .about-item-cont h3 {
+  margin-bottom: 8px;
+}
+.meet-team {
+  background: #eeeeee;
+  padding: 50px 0 20px 0;
+}
+.meet-team .team-tile-cont {
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .meet-team .team-tile-cont {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.meet-team h2 {
+  text-align: center;
+}
+.meet-team h4 {
+  margin: 5px 0;
+  color: #718096;
+}
+.meet-team .team {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 30;
+}
+@media (min-width: 700px) {
+  .meet-team .team {
+    width: 48%;
+  }
+}
+.meet-team .team .team-text {
+  margin: 10px 20px;
+  text-align: center;
+}
+.meet-team .social-icons a {
+  text-decoration: none;
+  color: #9370DB;
+  font-size: 2rem;
+  font-size: 3.5rem;
+  margin: 5px 10px;
+}
+.meet-team img {
+  width: 100px;
+  border-radius: 100px;
+}
