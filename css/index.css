@@ -172,16 +172,34 @@ button {
 }
 .nav-header {
   background: white;
-  display: flex;
-  flex-wrap: none;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   width: 100%;
-  height: 60px;
+  height: 120px;
   z-index: 5;
   border-bottom: 2px solid #d3d3d3;
+}
+@media (min-width: 700px) {
+  .nav-header {
+    height: 60px;
+  }
+}
+.nav-header .nav-cont {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .nav-header .nav-cont {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .nav-header .logo {
   display: flex;
@@ -193,23 +211,13 @@ button {
   margin-left: 15px;
 }
 .nav-header img {
-  width: 60px;
+  width: 40px;
   height: 40px;
 }
 .nav-header h2 {
   padding: 15px;
-  color: #9370DB;
-  font-size: 2rem;
-}
-@media (min-width: 700px) {
-  .nav-header h2 {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 1000px) {
-  .nav-header h2 {
-    font-size: 3.2rem;
-  }
+  color: black;
+  font-size: 3.2rem;
 }
 .nav-header nav {
   display: flex;
@@ -217,28 +225,16 @@ button {
 }
 .nav-header nav a {
   text-decoration: none;
-  color: #9370DB;
+  color: black;
   font-size: 2rem;
-  padding: 5px;
-  font-size: 1.5rem;
-}
-@media (min-width: 700px) {
-  .nav-header nav a {
-    padding: 15px;
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1000px) {
-  .nav-header nav a {
-    padding: 25px;
-    font-size: 2.5rem;
-  }
+  padding: 25px;
+  font-size: 2.5rem;
 }
 .nav-fixed-spacer {
   height: 60px;
 }
 footer {
-  background: #9370DB;
+  background: black;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -252,7 +248,7 @@ footer nav a {
   padding: 0 10px;
 }
 .main-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/studentOnComputer.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/coverPic.jpg');
   background-position: center top;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,14 +287,14 @@ footer nav a {
 }
 @media (min-width: 700px) {
   .main-header .call-to-action {
-    padding-right: 40%;
+    padding-left: 30%;
   }
 }
 .main-header .call-to-action h2 {
   padding: 15px;
 }
 .main-header button {
-  background: #9370DB;
+  background: black;
   border: 1px solid grey;
   border-radius: 10px;
   color: white;
@@ -309,7 +305,7 @@ footer nav a {
   padding: 20px 0;
 }
 .how-works .how-cont {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: none;
   flex-direction: row;
@@ -322,11 +318,18 @@ footer nav a {
   max-width: 40%;
   max-height: 200px;
 }
-.how-works div {
-  width: 40%;
-}
-.how-works div h2 {
+.how-works h2 {
   margin: 10px 0;
+}
+.how-works .social-icons {
+  margin-top: 20px;
+}
+.how-works .social-icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-size: 3.5rem;
+  margin: 5px 10px;
 }
 .mentors {
   background: #eeeeee;
@@ -445,7 +448,7 @@ footer nav a {
 .about-project .about-cont .github a {
   display: inline-block;
   text-decoration: none;
-  color: #9370DB;
+  color: black;
   font-size: 2rem;
   width: 5.6rem;
   font-size: 6.5rem;
@@ -520,7 +523,7 @@ footer nav a {
 }
 .meet-team .social-icons a {
   text-decoration: none;
-  color: #9370DB;
+  color: black;
   font-size: 2rem;
   font-size: 3.5rem;
   margin: 5px 10px;
