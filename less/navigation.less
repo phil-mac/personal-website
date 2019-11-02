@@ -16,6 +16,8 @@
         .flex(column, space-between, none);
         .limit-max-width();
 
+        width: @content-width;
+
         @media @tablet{
             .flex(row, space-between, none);
         }
@@ -37,13 +39,6 @@
         padding: 15px;
         color: @school-color;
         font-size: 3.2rem;
-
-        // @media @tablet{
-        //     font-size: 2.5rem;
-        // }
-        // @media @desktop{
-        //     font-size: 3.2rem;
-        // }
     }
 
     nav{
@@ -54,15 +49,6 @@
             .link();
             padding: 25px;
             font-size: 2.5rem;
-
-            // @media @tablet{
-            //     padding: 15px;
-            //     font-size: 2.0rem;
-            // }
-            // @media @desktop{
-            //     padding: 25px;
-            //     font-size: 2.5rem;
-            // }
         }
     }
 

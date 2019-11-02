@@ -148,10 +148,10 @@ h1 {
   font-size: 5rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 h1,
 h2,
@@ -191,6 +191,7 @@ button {
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
+  width: 80%;
 }
 @media (min-width: 700px) {
   .nav-header .nav-cont {
@@ -247,8 +248,56 @@ footer nav a {
   text-decoration: none;
   padding: 0 10px;
 }
+footer .nav-cont {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 80%;
+}
+@media (min-width: 700px) {
+  footer .nav-cont {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+footer .logo {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 15px;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+}
+footer h1 {
+  color: white;
+}
+footer h2 {
+  padding: 15px;
+  font-size: 3.2rem;
+  color: white;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+footer nav a {
+  padding: 25px;
+  font-size: 2.5rem;
+}
 .main-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/coverPic.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/physicsplayground.png');
   background-position: center top;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,17 +307,17 @@ footer nav a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 350px;
+  height: 200px;
   color: white;
 }
 @media (min-width: 700px) {
   .main-header {
-    height: 500px;
+    height: 300px;
   }
 }
 @media (min-width: 1000px) {
   .main-header {
-    height: 750px;
+    height: 450px;
   }
 }
 .main-header .main-header-cont {
@@ -304,8 +353,8 @@ footer nav a {
 .how-works {
   padding: 20px 0;
 }
-.how-works .how-cont {
-  width: 80%;
+.how-works .content-width {
+  width: 100%;
   display: flex;
   flex-wrap: none;
   flex-direction: row;
@@ -318,7 +367,10 @@ footer nav a {
   max-width: 40%;
   max-height: 200px;
 }
-.how-works h2 {
+.how-works .about-text {
+  width: 80%;
+}
+.how-works .about-text h2 {
   margin: 10px 0;
 }
 .how-works .social-icons {
@@ -336,13 +388,11 @@ footer nav a {
   padding: 40px 0 20px 0;
 }
 .mentors .mentor-tile-cont {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-wrap: none;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 @media (min-width: 1000px) {
@@ -351,7 +401,6 @@ footer nav a {
   }
 }
 .mentors h2 {
-  text-align: center;
   margin-bottom: 15px;
 }
 .mentors h3 {
@@ -376,7 +425,6 @@ footer nav a {
   padding: 40px 0 20px 0;
 }
 .classes h2 {
-  text-align: center;
   margin-bottom: 15px;
 }
 .classes .class-tile-cont {
@@ -415,6 +463,11 @@ footer nav a {
   .classes img {
     max-width: 60%;
   }
+}
+.content-width {
+  width: 80%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .about-project {
   padding: 20px 0;
