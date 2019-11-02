@@ -1,5 +1,5 @@
 .main-header{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/coverPic.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/physicsplayground.png');
     background-position: center top;
 
     background-position: center;
@@ -8,16 +8,16 @@
 
     .flex(row, center, none);
 
-    height: 350px;
+    height: 200px;
 
     color: @white;
 
     @media @tablet{
-        height: 500px;
+        height: 300px;
     }
 
     @media @desktop{
-        height: 750px;
+        height: 450px;
     }
 
     .main-header-cont{
@@ -46,51 +46,47 @@
     }
 }
 
-.how-works{
-    padding: 20px 0;
+#about{
+    // padding: 20px 0;
 
-    .how-cont{
-        width: 80%;
-
+    .about-cont{
         .flex(row, space-evenly, none);
-
-        .limit-max-width();
-        
     }
 
     .how-img{
         max-width: 40%;
-        max-height: 200px;
+        max-height: 350px;
     }
-    // div{
-    //     width: 80%;
+    .about-text{
+        width: 80%;
+
+        margin-right: 60px;
 
         h2{
-            margin: 10px 0;
+            // margin: 10px 0;
         }
-    // }
+    }
 
     .social-icons{
         margin-top:20px;
         a{
             .link();
             font-size: 3.5rem;
-            margin: 5px 10px;
+            margin: 0 10px;
         }
     }
 }
 
-.mentors{
+#skills{
     background: @section-background;
 
-    padding: 40px 0 20px 0;
+    // padding: 40px 0 20px 0;
+    
 
     .mentor-tile-cont{
-        width: 100%;
-        
-        .limit-max-width();
+        width: @content-width;
 
-        .flex(column, space-evenly, none);
+        .flex(column, flex-start, none);
     
         @media @desktop{
             flex-direction: row;
@@ -98,7 +94,6 @@
     }
 
     h2{
-        text-align: center;
         margin-bottom: 15px;
     }
     h3{
@@ -106,13 +101,9 @@
     }
 
     .mentor{
-        .flex(row, center, none);
+        .flex(row, flex-start, none);
 
-        padding: 10px 30px;
-
-        .mentor-text{
-            margin-left: 20px;
-        }
+        margin-right: 30px;
     }
     img{
         width: 100px;
@@ -120,17 +111,9 @@
     }
 }
 
-.classes{
-
-    padding: 40px 0 20px 0;
-
-    h2{
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
+#projects{
     .class-tile-cont{
-        .flex(row, space-evenly, wrap);
+        .flex(row, flex-start, wrap);
 
         .limit-max-width();
     }
@@ -146,7 +129,7 @@
 
         font-size: 2rem;
 
-        margin: 20px 0;
+        margin: 20px 20px 0 0;
 
         @media @tablet{
             flex-direction: column-reverse;
@@ -162,5 +145,14 @@
         @media @tablet{
             max-width:60%;
         }
+    }
+}
+
+.content-width{
+    width: @content-width;
+    padding: 30px 0 30px 0;
+    .limit-max-width();
+    @media @tablet{
+        width: 95%;
     }
 }
