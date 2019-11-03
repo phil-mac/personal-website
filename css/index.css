@@ -176,7 +176,7 @@ button {
   z-index: 5;
   border-bottom: 2px solid #d3d3d3;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .nav-header {
     height: 60px;
   }
@@ -192,7 +192,7 @@ button {
   margin: 0 auto;
   width: 80%;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .nav-header .nav-cont {
     display: flex;
     flex-wrap: none;
@@ -230,7 +230,7 @@ button {
   font-size: 2.2rem;
   padding-right: 15px;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .nav-header nav a {
     padding: 15px;
   }
@@ -238,7 +238,7 @@ button {
 .nav-fixed-spacer {
   height: 100px;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .nav-fixed-spacer {
     height: 60px;
   }
@@ -255,7 +255,7 @@ footer .nav-cont {
   align-items: center;
   align-items: flex-start;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   footer .nav-cont {
     display: flex;
     flex-wrap: none;
@@ -281,12 +281,13 @@ footer h1 {
   color: white;
 }
 footer h2 {
-  padding: 15px 0;
+  padding-top: 15px;
   font-size: 3.2rem;
   color: white;
 }
 footer nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 footer nav a {
@@ -295,21 +296,24 @@ footer nav a {
   text-decoration: none;
   padding-right: 15px;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   footer nav a {
-    padding: 15px;
+    padding: 15px 15px 0 15px;
   }
 }
 footer p {
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   footer p {
     text-align: center;
   }
 }
 footer .content-width {
   padding: 0;
+}
+footer h2 a nav {
+  border: 1px solid red;
 }
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/physicsplayground.png');
@@ -325,7 +329,7 @@ footer .content-width {
   height: 200px;
   color: white;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .main-header {
     height: 300px;
   }
@@ -364,7 +368,7 @@ footer .content-width {
   align-items: center;
   align-items: flex-start;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   #about .about-cont {
     display: flex;
     flex-wrap: none;
@@ -377,7 +381,7 @@ footer .content-width {
   margin-top: 20px;
   width: 100%;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   #about .how-img {
     max-width: 40%;
   }
@@ -385,7 +389,7 @@ footer .content-width {
 #about .about-text {
   width: 100%;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   #about .about-text {
     max-width: 80%;
     margin-right: 60px;
@@ -434,7 +438,7 @@ footer .content-width {
   width: 100px;
   border-radius: 100px;
 }
-#projects .class-tile-cont {
+#projects .proj-tile-cont {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -443,38 +447,66 @@ footer .content-width {
   max-width: 1300px;
   margin: 0 auto;
 }
-#projects .class {
-  width: 98%;
-  height: 720px;
+#projects .proj {
   background: #eeeeee;
   font-size: 2rem;
   margin: 20px 0 0 1%;
+  width: 98%;
+  height: 760px;
 }
-#projects .class .preview-cont {
+@media (min-width: 840px) {
+  #projects .proj {
+    width: 48%;
+  }
+}
+#projects .proj .preview-cont {
   width: 96%;
   margin: 2% 2%;
   height: 300px;
   overflow: hidden;
   position: relative;
 }
-#projects .class iframe {
+#projects .proj iframe {
   width: 100%;
   height: 100%;
 }
-#projects .class img {
+#projects .proj img {
   position: absolute;
   margin: auto;
   width: 100%;
 }
-@media (min-width: 700px) {
-  #projects .class {
-    width: 48%;
-  }
+#projects .proj .text-cont {
+  width: 96%;
+  margin: 20px 2%;
 }
-@media (min-width: 1000px) {
-  #projects .class {
-    width: 32%;
-  }
+#projects .proj h3,
+#projects .proj h4,
+#projects .proj h5,
+#projects .proj a,
+#projects .proj ul,
+#projects .proj li {
+  margin: 10px 0;
+  color: black;
+}
+#projects .proj h3 {
+  font-size: 3rem;
+  color: blue;
+}
+#projects .proj h4 {
+  font-size: 2.4rem;
+  color: #808080;
+}
+#projects .proj a {
+  text-decoration: none;
+}
+#projects .proj .fa {
+  font-size: 4rem;
+}
+#projects .proj ul {
+  margin-left: 22px;
+}
+#projects .proj li {
+  list-style-type: square;
 }
 .content-width {
   width: 80%;
@@ -482,7 +514,7 @@ footer .content-width {
   max-width: 1300px;
   margin: 0 auto;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .content-width {
     width: 95%;
   }
@@ -537,7 +569,7 @@ footer .content-width {
   max-width: 1300px;
   margin: 0 auto;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .about-project .about-item-cont {
     flex-direction: row;
   }
@@ -564,7 +596,7 @@ footer .content-width {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .meet-team .team-tile-cont {
     flex-direction: row;
     flex-wrap: wrap;
@@ -586,7 +618,7 @@ footer .content-width {
   margin: 20px 0;
   padding: 10px 30;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .meet-team .team {
     width: 48%;
   }
