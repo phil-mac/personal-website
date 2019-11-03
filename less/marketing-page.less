@@ -55,7 +55,6 @@
     }
 
     .how-img{
-        // max-height: 350px;
         margin-top: 20px;
         width:100%;
         @media @tablet{
@@ -115,16 +114,27 @@
 }
 
 #projects{
-    .class-tile-cont{
+    .proj-tile-cont{
         .flex(row, flex-start, wrap);
 
         .limit-max-width();
     }
 
+    .proj{
+        background: @section-background;
+        font-size: 2rem;
 
-    .class{
-        // .flex(column, space-evenly, none);
-        // align-items: flex-start;
+        margin: 20px 0 0 1%;
+
+        width: 98%;
+        height: 760px;
+        
+        @media @tablet{
+            width: 48%;
+        }
+        // @media @desktop{
+        //     width: 32%;
+        // }
 
         .preview-cont{
             width: 96%;
@@ -141,41 +151,49 @@
 
         img{
             position: absolute;
-            // top: -9999px;
-            // left: -9999px;
-            // right: -9999px;
-            // bottom: -9999px;
             margin: auto;
             width: 100%;
         }
 
-        width: 98%;
-        height: 720px;
-
-        background: @section-background;
-
-        font-size: 2rem;
-
-        margin: 20px 0 0 1%;
-
-        @media @tablet{
-            // flex-direction: column;
-            width: 48%;
+        .text-cont{
+            width: 96%;
+            margin: 20px 2%;
         }
-        @media @desktop{
-            // flex-direction: column;
-            width: 32%;
+        
+
+        h3, h4, h5, a, ul, li{
+            margin: 10px 0;
+            color: @school-color;
         }
+
+        h3{
+            font-size:3rem;
+            color: blue;
+        }
+
+        h4{
+            font-size:2.4rem;
+            color: rgb(128, 128, 128);
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .fa{
+            font-size: 4rem;
+        }
+
+        ul{
+            margin-left: 22px;
+        }
+
+        li{
+            list-style-type: square;
+        }
+
+        
     }
-
-    // img{
-    //     max-height: 80%;
-    //     max-width:60%;
-
-    //     @media @tablet{
-    //         max-width:60%;
-    //     }
-    // }
 }
 
 .content-width{
