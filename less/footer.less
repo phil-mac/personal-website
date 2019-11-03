@@ -3,27 +3,18 @@ footer{
 
     color: @white;
 
-    text-align: center;
-
-    padding: 10px 0;
-
-    nav{
-        padding: 10px 0;
-        a{
-            color: @white;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-    }
+    // text-align: center;
 
     .nav-cont{
         .flex(column, space-between, none);
-        .limit-max-width();
+        align-items: flex-start;
+        // .limit-max-width();
 
-        width: @content-width;
+        // width: @content-width;
 
         @media @tablet{
             .flex(row, space-between, none);
+            width: 95%;
         }
     }
 
@@ -44,8 +35,7 @@ footer{
     }
 
     h2{
-        padding: 15px;
-        //color: @school-color;
+        padding: 15px 0;
         font-size: 3.2rem;
         color: @white;
 
@@ -57,9 +47,25 @@ footer{
 
         a{
             // .link();
-            padding: 25px;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            color: @white;
+            text-decoration: none;
+            padding-right: 15px;
+            @media @tablet{
+                padding: 15px;
+            }
         }
+    }
+
+    p{
+        padding-bottom: 20px;
+        @media @tablet{
+            text-align: center;
+        }
+    }
+
+    .content-width{
+        padding: 0;
     }
 }
 
