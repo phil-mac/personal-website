@@ -143,6 +143,7 @@ html {
 }
 h1 {
   font-size: 5rem;
+  font-weight: bold;
 }
 h2 {
   font-size: 3.5rem;
@@ -171,7 +172,7 @@ button {
   background: white;
   position: fixed;
   width: 100%;
-  height: 120px;
+  height: 100px;
   z-index: 5;
   border-bottom: 2px solid #d3d3d3;
 }
@@ -214,7 +215,7 @@ button {
   height: 40px;
 }
 .nav-header h2 {
-  padding: 15px;
+  padding: 15px 0;
   color: black;
   font-size: 3.2rem;
 }
@@ -226,11 +227,16 @@ button {
   text-decoration: none;
   color: black;
   font-size: 2rem;
-  padding: 15px;
   font-size: 2.2rem;
+  padding-right: 15px;
+}
+@media (min-width: 700px) {
+  .nav-header nav a {
+    padding: 15px;
+  }
 }
 .nav-fixed-spacer {
-  height: 120px;
+  height: 100px;
 }
 @media (min-width: 700px) {
   .nav-fixed-spacer {
@@ -240,16 +246,6 @@ button {
 footer {
   background: black;
   color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-footer nav {
-  padding: 10px 0;
-}
-footer nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0 10px;
 }
 footer .nav-cont {
   display: flex;
@@ -257,9 +253,7 @@ footer .nav-cont {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
-  width: 80%;
+  align-items: flex-start;
 }
 @media (min-width: 700px) {
   footer .nav-cont {
@@ -268,6 +262,7 @@ footer .nav-cont {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
   }
 }
 footer .logo {
@@ -286,7 +281,7 @@ footer h1 {
   color: white;
 }
 footer h2 {
-  padding: 15px;
+  padding: 15px 0;
   font-size: 3.2rem;
   color: white;
 }
@@ -295,8 +290,26 @@ footer nav {
   justify-content: space-between;
 }
 footer nav a {
-  padding: 25px;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+}
+@media (min-width: 700px) {
+  footer nav a {
+    padding: 15px;
+  }
+}
+footer p {
+  padding-bottom: 20px;
+}
+@media (min-width: 700px) {
+  footer p {
+    text-align: center;
+  }
+}
+footer .content-width {
+  padding: 0;
 }
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/physicsplayground.png');
@@ -333,7 +346,7 @@ footer nav a {
   width: 350px;
 }
 .main-header .call-to-action h2 {
-  padding: 15px;
+  padding: 15px 0;
 }
 .main-header button {
   background: black;
@@ -361,6 +374,7 @@ footer nav a {
   }
 }
 #about .how-img {
+  margin-top: 20px;
   width: 100%;
 }
 @media (min-width: 700px) {
@@ -436,10 +450,21 @@ footer nav a {
   font-size: 2rem;
   margin: 20px 0 0 1%;
 }
-#projects .class img,
+#projects .class .preview-cont {
+  width: 96%;
+  margin: 2% 2%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
 #projects .class iframe {
   width: 100%;
-  min-height: 200px;
+  height: 100%;
+}
+#projects .class img {
+  position: absolute;
+  margin: auto;
+  width: 100%;
 }
 @media (min-width: 700px) {
   #projects .class {
@@ -449,15 +474,6 @@ footer nav a {
 @media (min-width: 1000px) {
   #projects .class {
     width: 32%;
-  }
-}
-#projects img {
-  max-height: 80%;
-  max-width: 60%;
-}
-@media (min-width: 700px) {
-  #projects img {
-    max-width: 60%;
   }
 }
 .content-width {
